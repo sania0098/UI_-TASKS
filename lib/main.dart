@@ -7,9 +7,19 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:testing/task1.dart';
+import 'package:testing/task10.dart';
+import 'package:testing/task11.dart';
+import 'package:testing/task12.dart';
+import 'package:testing/task13.dart';
+import 'package:testing/task14.dart';
 import 'package:testing/task2.dart';
 import 'package:testing/task3.dart';
 import 'package:testing/task4.dart';
+import 'package:testing/task5.dart';
+import 'package:testing/task6.dart';
+import 'package:testing/task7.dart';
+import 'package:testing/task8.dart';
+import 'package:testing/task9.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,9 +37,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Task4(),
+      home: const Task12(),
     );
   }
+}
+
+class Tas10 {
+  const Tas10();
 }
 
 class screen1 extends StatelessWidget {

@@ -69,26 +69,31 @@ class Task4 extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(color: Colors.black54),
                           ),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.check_box_rounded,
-                                size: 100,
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              ),
-                              Text(
-                                'MCQS',
-                                style: TextStyle(
-                                    fontSize: 15, fontWeight: FontWeight.bold),
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "asset/pexels-photo-674010.jpeg",
+                                  height: 70,
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text(
+                                  'MCQS',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -106,25 +111,29 @@ class Task4 extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(color: Colors.black54),
                           ),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.radio_button_unchecked_sharp,
-                                size: 100,
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              ),
-                              Text('QUIZ',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold)),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "asset/pexels-photo-674010.jpeg",
+                                  height: 70,
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text('QUIZ',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -142,25 +151,29 @@ class Task4 extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(color: Colors.black54),
                           ),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.insert_comment_sharp,
-                                size: 100,
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              ),
-                              Text('papers',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold)),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "asset/pexels-photo-674010.jpeg",
+                                  height: 70,
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text('papers',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -178,25 +191,29 @@ class Task4 extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(color: Colors.black54),
                           ),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.picture_as_pdf_rounded,
-                                size: 100,
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              ),
-                              Text('PDF',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold)),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "asset/pexels-photo-674010.jpeg",
+                                  height: 70,
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text('PDF',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -214,25 +231,29 @@ class Task4 extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(color: Colors.black54),
                           ),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.business_center,
-                                size: 100,
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              ),
-                              Text('Jobs',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold)),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "asset/pexels-photo-674010.jpeg",
+                                  height: 70,
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text('Jobs',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -250,25 +271,29 @@ class Task4 extends StatelessWidget {
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(color: Colors.black54),
                           ),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.info_outline,
-                                size: 100,
-                              ),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              ),
-                              Text('About',
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold)),
-                              SizedBox(
-                                height: 10,
-                                width: 10,
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "asset/pexels-photo-674010.jpeg",
+                                  height: 70,
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                ),
+                                Text('About',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold)),
+                                SizedBox(
+                                  height: 10,
+                                  width: 10,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
