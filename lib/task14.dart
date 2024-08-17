@@ -37,7 +37,7 @@ class Task14 extends StatelessWidget {
                           height: 5,
                         ),
                         Text(
-                          "22",
+                          "22\$",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 30),
                         ),
@@ -72,7 +72,7 @@ class Task14 extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 80,
+            height: 50,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -101,7 +101,7 @@ class Task14 extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          "37",
+                          "37\$",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 30),
                         ),
@@ -136,7 +136,7 @@ class Task14 extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 80,
+            height: 50,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -165,7 +165,7 @@ class Task14 extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          "45",
+                          "45\$",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 30),
                         ),
