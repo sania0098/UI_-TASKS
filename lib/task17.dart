@@ -41,23 +41,28 @@ class Task17 extends StatelessWidget {
               itemCount: images.length,
               itemBuilder: (context, index) {
                 return Container(
-                  height: 150,
+                  height: 170,
                   width: 150,
-                  child: Row(
+                  child: Column(
                     children: [
-                      Image.asset(
-                        images[index],
-                        height: 150,
-                        width: 150,
+                      Row(
+                        children: [
+                          Image.asset(
+                            images[index],
+                            height: 150,
+                            width: 150,
+                          ),
+                          SizedBox(
+                            height: 10,
+                            width: 25,
+                          ),
+                          Text(
+                            Names[index],
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
-                      SizedBox(
-                        height: 10,
-                        width: 25,
-                      ),
-                      Text(
-                        Names[index],
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
+                      Divider()
                     ],
                   ),
                 );

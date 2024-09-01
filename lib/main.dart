@@ -15,7 +15,16 @@ import 'package:testing/task14.dart';
 import 'package:testing/task15.dart';
 import 'package:testing/task16.dart';
 import 'package:testing/task17.dart';
+import 'package:testing/task18.dart';
+import 'package:testing/task19.dart';
 import 'package:testing/task2.dart';
+import 'package:testing/task20.dart';
+import 'package:testing/task21.dart';
+import 'package:testing/task22.dart';
+import 'package:testing/task23.dart';
+import 'package:testing/task24.dart';
+import 'package:testing/task25.dart';
+import 'package:testing/task26.dart';
 import 'package:testing/task3.dart';
 import 'package:testing/task4.dart';
 import 'package:testing/task5.dart';
@@ -40,7 +49,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Task17(),
+      home: Task24(),
     );
   }
 }
