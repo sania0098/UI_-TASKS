@@ -195,7 +195,11 @@ class _Task24State extends State<Task24> {
                           onTap: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) {
-                              return Task25();
+                              return Task25(
+                                images: images[index],
+                                names: names[index],
+                                prices: prices[index],
+                              );
                             }));
                           },
                           child: Container(

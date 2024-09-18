@@ -3,13 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:testing/task26.dart';
 
 class Task25 extends StatefulWidget {
-  const Task25({super.key});
+  const Task25({super.key, this.images, this.names, this.prices});
+  final images;
+  final names;
+  final prices;
 
   @override
   State<Task25> createState() => _Task25State();
 }
 
 class _Task25State extends State<Task25> {
+  int selectedsize = -1;
+  void changesize(int parameter) {
+    setState(() {
+      selectedsize = parameter;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,14 +32,7 @@ class _Task25State extends State<Task25> {
           SizedBox(
             width: 10,
           ),
-          Container(
-            height: 40,
-            width: 40,
-            decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 240, 147, 178),
-                borderRadius: BorderRadius.circular(10)),
-            child: const Icon(Icons.arrow_back),
-          ),
+          puma_text(),
           SizedBox(
             width: 100,
           ),
@@ -67,7 +70,11 @@ class _Task25State extends State<Task25> {
                 SizedBox(
                   height: 10,
                 ),
-                Image.asset('asset/shirt_flutter.jpeg'),
+                Image.asset(widget.images),
+                SizedBox(
+                  height: 20,
+                ),
+                Text('${widget.prices}')
               ],
             ),
           ),
@@ -82,7 +89,7 @@ class _Task25State extends State<Task25> {
                 borderRadius: BorderRadius.circular(10)),
             child: Center(
                 child: Text(
-              'Select',
+              'select',
               style: TextStyle(color: Colors.black),
             )),
           ),
@@ -92,76 +99,101 @@ class _Task25State extends State<Task25> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 1,
-                            spreadRadius: 1.5)
-                      ]),
-                  child: Center(
-                      child: Text(
-                    '23',
-                    style: TextStyle(color: Colors.black),
-                  ))),
+              GestureDetector(
+                onTap: () {
+                  changesize(2);
+                },
+                child: Container(
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color:
+                                  selectedsize == 2 ? Colors.red : Colors.grey,
+                              blurRadius: 1,
+                              spreadRadius: 1.5)
+                        ]),
+                    child: Center(
+                        child: Text(
+                      '23',
+                      style: TextStyle(color: Colors.black),
+                    ))),
+              ),
               SizedBox(
                 width: 10,
               ),
-              Container(
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 1,
-                            spreadRadius: 1.5)
-                      ]),
-                  child: Center(
-                      child:
-                          Text('24', style: TextStyle(color: Colors.black)))),
+              GestureDetector(
+                onTap: () {
+                  changesize(3);
+                },
+                child: Container(
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color:
+                                  selectedsize == 3 ? Colors.red : Colors.grey,
+                              blurRadius: 1,
+                              spreadRadius: 1.5)
+                        ]),
+                    child: Center(
+                        child:
+                            Text('24', style: TextStyle(color: Colors.black)))),
+              ),
               SizedBox(
                 width: 10,
               ),
-              Container(
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 1,
-                            spreadRadius: 1.5)
-                      ]),
-                  child: Center(
-                      child:
-                          Text('25', style: TextStyle(color: Colors.black)))),
+              GestureDetector(
+                onTap: () {
+                  changesize(4);
+                },
+                child: Container(
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color:
+                                  selectedsize == 4 ? Colors.red : Colors.grey,
+                              blurRadius: 1,
+                              spreadRadius: 1.5)
+                        ]),
+                    child: Center(
+                        child:
+                            Text('25', style: TextStyle(color: Colors.black)))),
+              ),
               SizedBox(
                 width: 10,
               ),
-              Container(
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 1,
-                            spreadRadius: 1.5)
-                      ]),
-                  child: Center(
-                      child: Text('26', style: TextStyle(color: Colors.red)))),
+              GestureDetector(
+                onTap: () {
+                  changesize(5);
+                },
+                child: Container(
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color:
+                                  selectedsize == 5 ? Colors.red : Colors.grey,
+                              blurRadius: 1,
+                              spreadRadius: 1.5)
+                        ]),
+                    child: Center(
+                        child:
+                            Text('26', style: TextStyle(color: Colors.black)))),
+              ),
             ],
           ),
           SizedBox(
@@ -189,5 +221,23 @@ class _Task25State extends State<Task25> {
         ],
       ),
     ]));
+  }
+}
+
+class puma_text extends StatelessWidget {
+  const puma_text({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 40,
+      width: 40,
+      decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 240, 147, 178),
+          borderRadius: BorderRadius.circular(10)),
+      child: const Icon(Icons.arrow_back),
+    );
   }
 }
