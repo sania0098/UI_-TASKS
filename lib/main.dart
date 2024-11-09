@@ -1,11 +1,14 @@
-import 'dart:ffi';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:testing/do_to_app/to_do_tesk.dart';
+import 'package:testing/do_to_app/todo.dart';
+import 'package:testing/database_1.dart';
+import 'package:testing/splash_screen_.dart';
 import 'package:testing/task1.dart';
 import 'package:testing/task10.dart';
 import 'package:testing/task11.dart';
@@ -29,7 +32,21 @@ import 'package:testing/task27.dart';
 import 'package:testing/task28.dart';
 import 'package:testing/task29.dart';
 import 'package:testing/task3.dart';
+import 'package:testing/task30.dart';
+import 'package:testing/task31.dart';
+import 'package:testing/task32.dart';
+import 'package:testing/task33.dart';
+import 'package:testing/task34.dart';
+import 'package:testing/task35.dart';
+import 'package:testing/task36.dart';
+import 'package:testing/task37.dart';
+import 'package:testing/task38.dart';
+import 'package:testing/task39.dart';
 import 'package:testing/task4.dart';
+import 'package:testing/task40.dart';
+import 'package:testing/task41.dart';
+import 'package:testing/task42.dart';
+import 'package:testing/task43.dart';
 import 'package:testing/task5.dart';
 import 'package:testing/task6.dart';
 import 'package:testing/task7.dart';
@@ -45,15 +62,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Task29(),
-    );
+    return ScreenUtilInit(
+        designSize: const Size(360, 690),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        // Use builder only if you need to use library outside ScreenUtilInit context
+        builder: (_, child) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'First Method',
+            // You can use the library anywhere in the app even in theme
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+              textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
+            ),
+            home: child,
+          );
+        },
+        child: Todo());
   }
 }
 

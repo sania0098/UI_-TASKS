@@ -182,7 +182,7 @@ class Task9 extends StatelessWidget {
                       height: 50,
                     ),
                     const Text(
-                      'SOFT DRINK',
+                      'soft DRINK',
                       style: TextStyle(fontSize: 20, color: Colors.white),
                     ),
                     const SizedBox(

@@ -294,24 +294,6 @@ class _Task27State extends State<Task27> {
                                           185,
                                         ))),
                                   ),
-                                  // SizedBox(
-                                  //   height: 40,
-                                  // ),
-                                  // Container(
-                                  //   height: 20,
-                                  //   width: 60,
-                                  //   decoration: BoxDecoration(
-                                  //       color: Colors.red,
-                                  //       borderRadius:
-                                  //           BorderRadius.circular(10)),
-                                  //   child: Center(
-                                  //     child: Text(
-                                  //       'Here Now',
-                                  //       style: TextStyle(
-                                  //           color: Colors.white, fontSize: 10),
-                                  //     ),
-                                  //   ),
-                                  // ),
                                 ],
                               ),
                             ],
